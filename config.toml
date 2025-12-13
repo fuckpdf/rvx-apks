@@ -1,10 +1,12 @@
 parallel-jobs = 1
 
 [YouTube]
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
-included-patches = "'Custom branding name for YouTube' 'MaterialYou' 'Theme'"
-patcher-args = "-e 'Custom branding icon for YouTube' -OappIcon=mmt -e 'Overlay buttons' -OwiderButtonsSpace=true -e 'Snack bar components' -OdarkThemeBackgroundColor=@android:color/black -OlightThemeBackgroundColor=@android:color/white -OstrokeColor=?attr/ytChipBackground -e 'Visual preferences icons for YouTube' -OsettingsMenuIcon=revanced"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
+patches-source = "inotia00/revanced-patches"
+integrations-source = "inotia00/revanced-integrations"
+rv-brand = "inotia00 ReVanced"
+patcher-args = "-e 'Custom branding' -OcustomName=YouTube -OcustomIcon=MMT -e 'Change header' -Ocustom=Premium"
+
 
 [Music]
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
