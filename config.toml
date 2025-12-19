@@ -1,26 +1,31 @@
 parallel-jobs = 1
 
-[Music]
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music/"
-patches-source = "inotia00/revanced-patches"
-integrations-source = "inotia00/revanced-integrations"
-rv-brand = "inotia00 ReVanced"
-patcher-args = "-e 'Custom branding' -OcustomName=YT Music -OcustomIcon=mmt"
-
-[Twitter]
-apkmirror-dlurl = "https://apkmirror.com/apk/twitter-inc/twitter/"
-patches-source = "crimera/piko"
-integrations-source = "crimera/revanced-integrations"
-rv-brand = "crimera ReVanced"
-excluded-patches = "'Dynamic color'"
-
 [YouTube]
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
-patches-source = "inotia00/revanced-patches"
-integrations-source = "inotia00/revanced-integrations"
-rv-brand = "inotia00 ReVanced"
-arch = "arm64-v8a"
-build-mode = "both"
-version = "20.21.27"
-patcher-args = "-e 'Custom branding' -OcustomName=YouTube -OcustomIcon=mmt -e 'Change header' -Ocustom=Premium"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
+included-patches = "'Custom branding name for YouTube' 'MaterialYou' 'Theme'"
+patcher-args = "-e 'Custom branding icon for YouTube' -OappIcon=mmt -e 'Overlay buttons' -OwiderButtonsSpace=true -e 'Snack bar components' -OdarkThemeBackgroundColor=@android:color/black -OlightThemeBackgroundColor=@android:color/white -OstrokeColor=?attr/ytChipBackground -e 'Visual preferences icons for YouTube' -OsettingsMenuIcon=revanced"
 
+[Music]
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music"
+included-patches = "'Custom branding name for YouTube Music' 'Disable music video in album' 'Enable debug logging'"
+patcher-args = "-e 'Custom branding icon for YouTube Music' -OappIcon=mmt -e 'Visual preferences icons for YouTube Music' -OsettingsMenuIcon=revanced"
+arch = "both"
+
+[Reddit]
+uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
+apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit"
+patcher-args = "-e 'Custom branding name for Reddit' -OappName='RVX Reddit'"
+
+[Spotify]
+uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+included-patches = "'Custom theme'"
+patcher-args = "-e 'Custom branding name for Spotify' -OappName='RVX Spotify'"
+arch = "arm64-v8a"
+
+[X]
+uptodown-dlurl = "https://twitter.en.uptodown.com/android"
+apkmirror-dlurl = "https://apkmirror.com/apk/x-corp/twitter"
+patches-source = "crimera/piko"
+rv-brand = "Piko"
